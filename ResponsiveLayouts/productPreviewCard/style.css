@@ -1,0 +1,148 @@
+/*
+    Reset by https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #f2eae2;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*
+
+    Component styles
+
+*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.product_article {
+    border: 0.025em solid transparent;
+    border-radius: 1.5em;
+    max-width: 41.5em;
+    background-color: #ffff;
+}
+
+.attribution {
+    flex: 0;
+}
+
+.product_img {
+    object-fit: contain;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+}
+
+.product_type {
+    color: #6c7289;
+}
+
+.product_title {
+    color: #1c232b;
+}
+
+.product_description {
+    color: #6c7289;
+}
+
+.cart_btn {
+    margin: 1.5em auto;
+    padding: 0.5em 1em;
+    background-color: #3d8168;
+    color: white;
+    border-color: transparent;
+    border-radius: 0.65em;
+}
+
+.cart_btn:hover {
+    background-color: #1a4032;
+}
+
+/*
+    Media Queries
+*/
+
+@media screen and (min-width: 64em) {
+    .product_article {
+        flex-direction: row;
+        max-width: 60%;
+    }
+
+    .product_img {
+        border-bottom-left-radius: 1.5em;
+        border-top-right-radius: 0;
+    }
+}
