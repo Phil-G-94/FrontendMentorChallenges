@@ -84,11 +84,6 @@ main {
     align-items: center;
 }
 
-.container_row {
-    display: flex;
-    flex-direction: row;
-}
-
 .product_article {
     border: 0.025em solid transparent;
     border-radius: 1.5em;
@@ -118,6 +113,10 @@ main {
     color: #6c7289;
 }
 
+.cart_btn_container {
+    display: flex;
+}
+
 .cart_btn {
     margin: 1.5em auto;
     padding: 0.5em 1em;
@@ -125,6 +124,11 @@ main {
     color: white;
     border-color: transparent;
     border-radius: 0.65em;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9em;
 }
 
 .cart_btn:hover {
